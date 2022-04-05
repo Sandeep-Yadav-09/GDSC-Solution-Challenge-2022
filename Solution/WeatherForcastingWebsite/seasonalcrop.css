@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    position: sticky ;
+    top: 0px;
+    padding: 15px;
+}
+/* Navigation bar */
+#navbar::before{
+    content: "";
+    background-color:aliceblue;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+.title{
+    font-size: 2rem;
+    width: 100vw;
+    text-align: center;
+    padding-bottom: 5px;
+    font-family: 'Redressed', cursive;
+}
+
+.item a{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: magenta;
+    font-weight: bolder;
+    font-size: 1.8em;
+    text-decoration: none;
+}
+.item a:hover{
+    color: maroon;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 1.8em;
+}
+#allfoods{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+#allfoods .heading{
+    display: block;
+    width: 100vw;
+    text-align: center;
+    margin: 10px;
+}
+.heading h1{
+    background-color:gold;
+    width: 300px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+#North_Indian{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+#Gujarati{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+#Chinese{
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+}
+.food {
+border: 5px #ccc;
+border-radius:25px;
+border-style: groove;
+background-color: bisque;
+/* width: fit-content; */
+
+margin: 5px;
+
+/* float: left; */
+padding: 20px;
+}
+
+.food:hover {
+border: 5px solid #ccc;
+background-color: blanchedalmond;
+transform: scale(1.05);
+
+}
+
+.food img {
+width: 600px;
+height: auto;
+padding: 10px;
+
+}
+
+.span {
+background-color:green;
+padding: 1px;
+
+}
+.desc {
+    background-color:rgb(236, 152, 236);
+font-family: 'Times New Roman', Helvetica, sans-serif;
+font-weight: 600;
+color: #1c1c1c;
+padding: 14px;
+border-radius: 10px;
+text-align: center;
+font-size: 200%;
+/* text-align: left; */
+/* margin: 8px 0px 6px; */
+}
+#veg {
+/*background-color: green;*/
+padding: 15px;
+width: fit-content;
+font-size: 200%;
+color: black;
+/* float: left; */
+}
+
+#nonveg {
+background-color: red;
+padding: 5px;
+width: fit-content;
+font-size: 125%;
+color: white;
+/* float: left; */
+}
+
+#details {
+/* font-family: ProximaNova, arial, Helvetica Neue, sans-serif; */
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 125%;
+padding: 5px;
+
+}
+
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+
+
+/* Navigation bar: Logo and Image */
+#logo img{
+    /* margin: y x */
+    margin: 4px 4px;
+    height: 55px;
+
+}

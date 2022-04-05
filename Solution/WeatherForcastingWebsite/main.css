@@ -1,0 +1,264 @@
+/*CSS Reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Navigation bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+/* Navigation bar: Logo and Image */
+#logo img{
+    /* margin: y x */
+    margin: 4px 4px;
+    height: 55px;
+
+}
+
+
+/* Navigation bar: List Styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    padding: 24px 65px;
+    color: white;
+}
+
+#navbar ul li a:hover{
+    text-decoration: none;
+    padding: 24px 65px;
+    color: black;
+    background: white;
+    border-radius: 70px;
+}
+#bt{
+    padding-left: 12px;
+    padding-bottom: 3px;  
+    padding-right: 12px;  
+    padding-top: 3px;  
+    margin-left: 95px;
+    cursor: pointer;
+    font-size: large;
+    border-radius: 13px;
+}
+#mini{
+    margin-right: 10px;
+    cursor: pointer;
+    
+}
+#min
+{
+  align-content: flex-end;
+}
+
+/*Home styling*/
+#Home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    padding: 3px 17px;
+    height: 520px;
+}
+
+#Home::before{
+    content: "";
+    background-image: url(Images/clouds.jpg);
+    background-size: cover;
+    background-position: 100%;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    opacity: 0.90;
+    top: 0px;
+    left: 0px;
+}
+
+#Home h1{
+    color:black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#Home p{
+    color:black;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Bree Serif', serif;
+    font-weight: 520;
+}
+
+
+/*                  Services Section            */
+
+.services-container{
+    background-image: url(Images/bg2.jpg);
+    height: 100%;
+    width: 100%;
+    margin-top: 0px;
+    background-position: 100%;
+    background-size: cover;
+    /* position: absolute; */
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    opacity: 0.90;
+    top: 0px;
+    left: 0px;
+}
+
+#services{
+    display: flex;
+    margin: 30px;
+    place-content: center;
+    
+}
+#services .box{
+    border: 4px solid brown;
+    margin: 12px 16px;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: rgb(225, 218, 218);
+}
+
+iframe{
+  width: 700px;; 
+  height: 400px; 
+  border:1px solid #fcf5f5;
+  /* align-items: center; */
+}
+
+
+/*                Footer designing  starts                            */
+/* footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+} */
+footer {
+    padding: 50px 0px;
+    background: rgb(51,155,158);
+    background: linear-gradient(145deg, rgba(51,155,158,1) 0%, rgba(104,204,152,1) 100%);
+  }
+  
+  footer .left-text-content p {
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  footer .left-text-content a {
+    color: #fff;
+  }
+  
+  footer .right-text-content {
+    float: right;
+  }
+  
+  footer .right-text-content p {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 25px;
+    text-transform: uppercase;
+  }
+  
+  footer .right-text-content ul li {
+    display: inline-block;
+  }
+  
+  footer .right-text-content ul li a {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    text-align: center;
+    line-height: 42px;
+    font-size: 14px;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #5fb759;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+
+  }
+  
+  footer .right-text-content ul li a:hover {
+    background-color: #d62ce2;
+    color: #fff;
+  }
+  
+  .facebook img{
+      height: 16px;  
+    }
+  .twitter img{
+      height: 16px;  
+    }
+  /* .linkedlin img{
+      height: 1px;  
+    } */
+  
+  @media (max-width: 992px) {
+    footer .left-text-content p {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    footer .right-text-content {
+      float: none;
+      text-align: center;
+    }
+}
+
+/*                     footer ends                    */
+
+/*Utility Classes*/
+.HPrimary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.btn{
+    text-decoration: none;
+    padding: 10px 18px;
+    background-color: brown;
+    border: 2px solid white;
+    border-radius: 17px;
+    margin: 7px 5px;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: aliceblue;
+    cursor: pointer;
+}
+.HPrimarycenter{
+    font-size: 3.0rem;
+    padding: 12px;
+    text-align: center;
+    color: black;
+    text-shadow: 3px 3px white;
+}
+.center{
+    text-align: center;
+}
